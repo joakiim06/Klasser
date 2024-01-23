@@ -12,9 +12,10 @@ namespace Testar_Klasser
             lobby.AddPlayer(new Player("BearHero", 2));
             lobby.AddPlayer(new Player("xXx_yes_xXx", 0));
 
-            string[] randomNames = { "xredbullgerdigvingar1337x", "xXx_integralkalkylensfundamentalsats_xXx", "pq-formeln1337" };
+            string[] randomNames = { "hej1337", "xX_integralkalkylensfundamentalsats_Xx", "pq-formeln1337" };
             
             Random rdm = new Random();
+
             int index = rdm.Next(randomNames.Length);
             string randomName = randomNames[index];
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Runtime.Intrinsics.Arm;
 using System.Security.Cryptography;
@@ -12,7 +13,7 @@ namespace Testar_Klasser
     {
         private string name;
         private int kills;
-
+        
         public void setPlayerName(string tmpPlayerName)
         {
             name = tmpPlayerName;
@@ -29,7 +30,7 @@ namespace Testar_Klasser
             this.kills = kills;
         }
 
-        public override string ToString()
+        public string ToString()
         {
             return $@"Användarnamn: {name}
 Kills: {kills}"; //Har detta för att den ska bryta efter användarnamnet för att det ska bli lättare att läsa helt enkelt
